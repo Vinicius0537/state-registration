@@ -30,6 +30,7 @@ int main() {
 	int digit, digit_1, digit_2;
 	int qtydigits, sum, multiplier;
 	int rest, result, VerifyDigit_1;
+	int VerifyDigit_2;
 	
 	cout << "\n";	
 	cout << "Enter a state registration: ";
@@ -68,6 +69,25 @@ int main() {
 	}
 	else {
 		VerifyDigit_1 = result;
+	}
+	
+	// Calculating the second verify digit
+	
+	multiplier = 3;
+	
+	sum = 0;
+	
+	sum = (VerifyDigit_1 * 2) + summation(registration, 
+	digit, multiplier, qtydigits);
+	
+	rest = sum % 11;
+	result = 11 - rest;
+	
+	if(result == 10 || result == 11) {
+		VerifyDigit_2 = 0;
+	}
+	else {
+		VerifyDigit_2 = result;
 	}
 	
 	return 0;
