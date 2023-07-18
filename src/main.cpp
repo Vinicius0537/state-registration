@@ -28,7 +28,8 @@ int main() {
 	
 	long long registration;
 	int digit, digit_1, digit_2;
-	int qtydigits;
+	int qtydigits, sum, multiplier;
+	int rest, result, VerifyDigit_1;
 	
 	cout << "\n";	
 	cout << "Enter a state registration: ";
@@ -48,6 +49,25 @@ int main() {
 		}
 		
 		qtydigits++;
+	}
+	
+	qtydigits = 0;
+	sum = 0;
+	multiplier = 2;
+	
+	// Calculating the first verify digit
+	
+	sum = summation(registration, digit, multiplier, 
+	qtydigits);
+	
+	rest = sum % 11;
+	result = 11 - rest;
+	
+	if(result == 10 || result == 11) {
+		VerifyDigit_1 = 0;
+	}
+	else {
+		VerifyDigit_1 = result;
 	}
 	
 	return 0;
