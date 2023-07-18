@@ -1,5 +1,5 @@
 <h1 align="center">
-	<img src="./src/assets/logo.png"/>
+	<img src="./logo.png"/>
 	<p>Federal District Registration 
 	Validation Project: C++</p>
 </h1>
@@ -40,7 +40,6 @@ The program offers the following features:
 ```bash
 	# Enter directory
 	$ cd state-registration
-	$ cd src
 ```
 
 ```bash
