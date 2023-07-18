@@ -40,10 +40,11 @@ The program offers the following features:
 ```bash
 	# Enter directory
 	$ cd state-registration
+	$ cd src
 ```
 
 ```bash
-	# Install the dependencies
+	# Install dependency
 	$ sudo apt-get install g++	
 ```
 
