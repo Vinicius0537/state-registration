@@ -90,5 +90,21 @@ int main() {
 		VerifyDigit_2 = result;
 	}
 	
+	// Checking if the state registration is valid 
+	// or not
+	
+	cout << "\n";
+	
+	if(VerifyDigit_1 == digit_1) {
+		if(VerifyDigit_2 == digit_2) {
+			cout << "The state registration is valid!";
+		}
+	}
+	else {
+		cout << "The state registration is invalid!";
+	}
+	
+	cout << "\n\n";
+	
 	return 0;
 }
