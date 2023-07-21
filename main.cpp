@@ -28,6 +28,7 @@ int multiplier, int qtydigits) {
 // state registration is valid
 
 bool ValidateStateRegistration(long long registration) {
+    
     int digit, digit_1, digit_2;
     int qtydigits, sum, multiplier;
     int rest, result, VerifyDigit_1;
