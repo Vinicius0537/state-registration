@@ -8,11 +8,11 @@ using namespace std;
 int summation(long long registration, int digit, 
 int multiplier, int qtydigits) {
 	
-	int sum = 0;
+    int sum = 0;
 		
 	while(registration > 0) {
 		
-		digit = registration % 10;
+        digit = registration % 10;
 		registration /= 10;
 			
 		if(multiplier > 9) {
@@ -33,21 +33,20 @@ bool ValidateStateRegistration(long long registration) {
     int rest, result, VerifyDigit_1;
     int VerifyDigit_2;
     bool isValid;
-
+    
     qtydigits = 0;
 	
     // Getting the two last digits
     while(qtydigits < 2) {
         digit = registration % 10;
-	registration /= 10;
-	if(qtydigits == 0) {
-	    digit_2  = digit;
-	}
-	else if(qtydigits == 1) {
-	    digit_1 = digit;
-	}
-		
-	qtydigits++;
+        registration /= 10;
+        if(qtydigits == 0) {
+            digit_2  = digit;
+        }
+        else if(qtydigits == 1) {
+            digit_1 = digit;
+        }
+        qtydigits++;
     }
 	
     qtydigits = 0;
@@ -68,7 +67,7 @@ bool ValidateStateRegistration(long long registration) {
     else {
         VerifyDigit_1 = result;
     }
-
+    
     // Calculating the second verify digit
 	
     multiplier = 3;
@@ -95,8 +94,8 @@ bool ValidateStateRegistration(long long registration) {
 	
     if(VerifyDigit_1 == digit_1) {
         if(VerifyDigit_2 == digit_2) {
-	    isValid = true;
-	}
+            isValid = true;
+        }
     }
     else {
         isValid = false;
@@ -111,14 +110,14 @@ int main() {
 	cout << "\n";	
 	cout << "Enter a state registration: ";
 	cin >> registration;
-
+	
 	cout << "\n";
-
+	
 	if(ValidateStateRegistration(registration) == true) {
-	    cout << "the state registration is valid!";
+        cout << "the state registration is valid!";
 	}
 	else {
-	    cout << "the state registration is not valid!";
+        cout << "the state registration is not valid!";
 	}
 	
 	cout << "\n\n";
