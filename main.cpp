@@ -112,9 +112,7 @@ int main() {
 	cout << "Enter a state registration: ";
 	cin >> registration;
 	
-	cout << "\n";
-	
-	if(ValidateStateRegistration(registration) == true) {
+	if(ValidateStateRegistration(registration)) {
         cout << "the state registration is valid!";
 	}
 	else {
